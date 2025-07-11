@@ -43,6 +43,10 @@ cd ai-slop-detector
 
 Step 3: Start developing
 
+```sh
+pnpm install && pnpm run dev
+```
+
 
  ## Todo
  - [ ] Can select AI providers
