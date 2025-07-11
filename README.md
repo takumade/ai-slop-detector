@@ -5,7 +5,10 @@ Is a chrome extension for detecting low-effort Linked In posts that are written 
 > The good part is the slop author wont know it, unless you tell them. 🤠
 
 ## Tech Stack
-- To be decided
+- [React](https://react.dev/)
+- [Tailwind](https://tailwindcss.com/)
+- [Shadcn](https://ui.shadcn.com/)
+- [Vite Plugin Web Extension](https://vite-plugin-web-extension.aklinker1.io/)
 
 ## Supported AI Providers
 - [ ] Gemini ♊
