@@ -2,6 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import webExtension, { readJsonFile } from "vite-plugin-web-extension";
 
+// @ts-ignore
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
+
 function generateManifest() {
   const manifest = readJsonFile("src/manifest.json");
   const pkg = readJsonFile("package.json");
@@ -20,5 +24,11 @@ export default defineConfig({
     webExtension({
       manifest: generateManifest,
     }),
+    tailwindcss(),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
 });
