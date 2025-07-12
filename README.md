@@ -8,7 +8,7 @@ Is a chrome extension for detecting low-effort Linked In posts that are written 
 - [React](https://react.dev/)
 - [Tailwind](https://tailwindcss.com/)
 - [Shadcn](https://ui.shadcn.com/)
-- [Vite Plugin Web Extension](https://vite-plugin-web-extension.aklinker1.io/)
+- [WXT](https://github.com/wxt-dev/wxt)
 
 ## Supported AI Providers
 - [ ] Gemini ♊
