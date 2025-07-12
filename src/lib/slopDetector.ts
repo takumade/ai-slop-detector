@@ -12,3 +12,5 @@ class SlopDetector {
 
 
 }
+
+export default SlopDetector;
