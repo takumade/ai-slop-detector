@@ -27,7 +27,7 @@ const FormSchema = z.object({
   }),
 })
 
-export function AddProviderForm() {
+export function AddProviderForm({ onSubmit }: { onSubmit: (data: z.infer<typeof FormSchema>) => void }) {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -36,7 +36,9 @@ export function AddProviderForm() {
     },
   })
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
+  function handleOnSubmit(data: z.infer<typeof FormSchema>) {
+
+    onSubmit(data);
     toast("You submitted the following values", {
       description: (
         <pre className="mt-2 w-[320px] rounded-md bg-neutral-950 p-4">
@@ -48,7 +50,7 @@ export function AddProviderForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
+      <form onSubmit={form.handleSubmit(handleOnSubmit)} className="w-2/3 space-y-6">
 
       <FormField
           control={form.control}
