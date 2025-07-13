@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { AddProviderForm } from '../../components/AddProvider';
 
 import "../../assets/App.css";
 
@@ -37,8 +36,6 @@ function App() {
       <h1 className="text-3xl font-bold">
         AI Slop Detector 🤖
       </h1>
-
-      <AddProviderForm />
     </div>
   );
 }
